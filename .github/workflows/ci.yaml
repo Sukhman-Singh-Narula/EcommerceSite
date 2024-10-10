@@ -24,7 +24,9 @@ jobs:
     # Step 3: Install dependencies
     - name: Install dependencies
       run: npm install
-
+    # change dir
+    - name: cd to backend
+      run: cd backend
     # Step 4: Run tests
     - name: Run tests
       run: npm test
